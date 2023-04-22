@@ -43,7 +43,7 @@
   }
 
   function deleteTimer() {
-    stoptTimer();
+    stopTimer();
     db.timers.delete(timer.id);
     dispatch("timerdeleted");
   }
