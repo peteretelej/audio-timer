@@ -26,7 +26,7 @@
     <div class="flex items-center justify-center my-6">
       <div class="text-center">
         <img
-          src="/images/audio-timer.png"
+          src="images/audio-timer.png"
           alt="Audio Timer Logo"
           class="mx-auto mb-4 w-32 h-32 rounded"
         />
