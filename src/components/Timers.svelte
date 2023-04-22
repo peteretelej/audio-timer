@@ -1,5 +1,4 @@
 <script>
-    
   import { onMount } from "svelte";
   import db from "./db";
   import AddTimer from "./AddTimer.svelte";
@@ -30,8 +29,9 @@
 </script>
 
 <main class="">
-  <div class="relative ">
+  <div class="relative">
     <div class="relative flex items-center justify-between">
+        
       <span
         class="bg-white pr-3 text-base font-semibold leading-6 text-gray-900"
         >Timers</span
@@ -58,22 +58,33 @@
   </div>
 
   {#if addingTimer}
-  <div class="mx-auto rounded-lg shadow my-3 p-3">
-    <AddTimer on:timeradded={updateTimers} />
-  </div>
-   
+    <div class="mx-auto rounded-lg shadow my-3 p-3">
+      <AddTimer on:timeradded={updateTimers} />
+    </div>
+  {/if}
+
+  {#if timers.length === 0}
+    <div class="my-5 flex items-center justify-center">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">
+          Welcome to Audio Timer
+        </h1>
+        <p class="text-xl text-gray-700 mb-4">
+          Click the <span class="font-mono font-bold">Add Timer</span> button to create your first timer.
+        </p>
+      </div>
+    </div>
   {/if}
 
   <div class="overflow-hidden rounded-md bg-white shadow my-5">
     <ul class="divide-y divide-gray-200">
       {#each timers as timer (timer.id)}
         <li class="px-6 py-4">
-          <Timer {timer}  on:timerdeleted={updateTimers} />
+          <Timer {timer} on:timerdeleted={updateTimers} />
         </li>
       {/each}
     </ul>
   </div>
-  
 </main>
 
 <svelte:window on:beforeunload={beforeUnload} />

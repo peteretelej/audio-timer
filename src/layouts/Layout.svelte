@@ -29,6 +29,7 @@
           src="images/audio-timer.png"
           alt="Audio Timer Logo"
           class="mx-auto mb-4 w-32 h-32 rounded"
+		  max-width="32"  max-height="32"
         />
         <h1 class="text-4xl font-bold text-gray-800">Audio Timer</h1>
       </div>
