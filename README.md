@@ -1,6 +1,6 @@
 # Audio Timer
 
-Audio Timer is a simple and intuitive web application that allows users to create custom timers with audio notifications. When a timer reaches the end of its countdown, it plays an audio message generated from the provided text using the SpeechSynthesis API. 
+Audio Timer is a simple and intuitive web application that allows you to create custom timers with audio notifications. When a timer reaches the end of its countdown, it plays any message you give it using the SpeechSynthesis API. 
 
 This app is perfect for managing tasks, workouts, or any activities that require timed audio alerts.
 
