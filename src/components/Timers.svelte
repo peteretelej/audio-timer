@@ -30,7 +30,7 @@
 </script>
 
 <main class="">
-  <div class="relative">
+  <div class="relative ">
     <div class="absolute inset-0 flex items-center" aria-hidden="true">
       <div class="w-full border-t border-gray-300" />
     </div>
@@ -61,7 +61,10 @@
   </div>
 
   {#if addingTimer}
+  <div class="mx-auto rounded-lg shadow my-3 p-3">
     <AddTimer on:timeradded={updateTimers} />
+  </div>
+   
   {/if}
 
   <div class="overflow-hidden rounded-md bg-white shadow">
