@@ -64,7 +64,7 @@
    
   {/if}
 
-  <div class="overflow-hidden rounded-md bg-white shadow">
+  <div class="overflow-hidden rounded-md bg-white shadow my-5">
     <ul class="divide-y divide-gray-200">
       {#each timers as timer (timer.id)}
         <li class="px-6 py-4">

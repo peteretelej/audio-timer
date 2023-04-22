@@ -1,7 +1,7 @@
 <script>
   import Footer from "../components/Footer.svelte";
-
 </script>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,16 +17,30 @@
     />
     <title>Audio Timer</title>
   </head>
-  <body>
+  <body class="bg-gray-100">
     <noscript
       >Enable JavaScript for the best experience with Audio Timers.</noscript
     >
-    <div class="mx-auto max-w-7xl my-8 px-4 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-3xl">
+	<div >
+
+    <div class="flex items-center justify-center my-6">
+      <div class="text-center">
+        <img
+          src="/images/audio-timer.png"
+          alt="Audio Timer Logo"
+          class="mx-auto mb-4 w-32 h-32 rounded"
+        />
+        <h1 class="text-4xl font-bold text-gray-800">Audio Timer</h1>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl my-8 px-4 sm:px-6 lg:px-8 ">
+      <div class="mx-auto max-w-3xl rounded-lg shadow-md p-4 bg-white" >
         <slot />
       </div>
     </div>
 
-	<Footer />
+    <Footer />
+	</div>
   </body>
 </html>
