@@ -29,8 +29,8 @@
 <div>
   <h2>Add Timer</h2>
 
-  <div class="flex justify-between pt-2 my-4 mx-4">
-    <div>
+  <div class="md:flex justify-between pt-2 my-4 mx-4">
+    <div class="w-full mx-2 mb-2">
       <label
         for="price"
         class="block text-sm font-medium leading-6 text-gray-900"
@@ -60,10 +60,10 @@
         </div>
       </div>
     </div>
-    <div class="w-full mx-4">
+    <div class="w-full mx-2">
       <label
         for="name"
-        class="ml-px block pl-4 text-sm font-medium leading-6 text-gray-900"
+        class="block text-sm font-medium leading-6 text-gray-900"
         >Text to Play</label
       >
       <div class="mt-2">
